@@ -130,17 +130,18 @@ Once the application is running, you can access:
 - `Body Parameters:` file (UploadFile, required) – Audio file (e.g., .wav) containing the meeting recording
 #### Response
 Returns a PDF file containing:
-1/ Structured Transcript – Transcription with speaker diarization
-2/ Summary – High-level summary of the meeting
-3/ Structured Sections – Bullet points of Objectives and Tasks
+1/ Structured Transcript – Transcription with speaker diarization \
+2/ Summary – High-level summary of the meeting \
+3/ Structured Sections – Bullet points of Objectives and Tasks \
 
-Example using curl
+Example using 
+```
 curl -X 'POST' \
   'http://localhost:8000/report/generate-report' \
   -H 'accept: */*' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@meeting1(3).wav;type=audio/x-wav'
-
+```
 #### Notes
 
 The PDF will automatically include:
