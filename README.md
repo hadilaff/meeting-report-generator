@@ -150,6 +150,28 @@ The PDF will automatically include:
 - Supported audio formats: .wav, .mp3 (ensure compatible with Whisper model)
 - GPU is used if available for faster transcription and summarization  
 
+## Models Used
+
+This project combines multiple state-of-the-art models for end-to-end meeting report generation:
+
+1. **Speech-to-Text (Transcription)**  
+   - Model: [Whisper (base)](https://github.com/openai/whisper)  
+   - Purpose: Converts meeting audio into text with timestamps.
+
+2. **Speaker Diarization**  
+   - Model: [pyannote/speaker-diarization](https://huggingface.co/pyannote/speaker-diarization)  
+   - Purpose: Detects and separates different speakers in the audio.  
+   - Requires a Hugging Face API token.
+
+3. **Summarization**  
+   - Model: [knkarthick/MEETING_SUMMARY](https://huggingface.co/knkarthick/MEETING_SUMMARY)  
+   - Purpose: Generates a concise summary of the meeting transcript.
+
+4. **Report Generation**  
+   - Library: [fpdf](https://pypi.org/project/fpdf/)  
+   - Purpose: Converts transcripts, summaries, objectives, and tasks into a structured PDF report.
+
+
 ### System
 
 - `GET /health` - Health check endpoint
