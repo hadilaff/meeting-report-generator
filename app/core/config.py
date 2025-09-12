@@ -27,6 +27,8 @@ class Settings(BaseSettings):
 
     # CORS
     CORS_ORIGINS: List[str] = ["*"]
+    HF_TOKEN: str | None = None
+    GROQ_API_KEY: str | None = None
 
     @field_validator("CORS_ORIGINS")
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:

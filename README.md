@@ -165,8 +165,13 @@ This project combines multiple state-of-the-art models for end-to-end meeting re
    - Requires a Hugging Face API token.
 
 3. **Summarization**  
+In this project, we experimented with two summarization methods:
+   1. Hugging Face pipeline
    - Model: [knkarthick/MEETING_SUMMARY](https://huggingface.co/knkarthick/MEETING_SUMMARY)  
    - Purpose: Generates a concise summary of the meeting transcript.
+   2. Groq LLM
+   - Model: llama-3.3-70b-versatile via Groq API
+   - Purpose: Generates a structured summary of the meeting transcript using a prompt-based approach.
 
 4. **Report Generation**  
    - Library: [fpdf](https://pypi.org/project/fpdf/)  
