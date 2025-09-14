@@ -1,0 +1,30 @@
+[
+  {
+    "question": "How do I reset my password?",
+    "answer": "To reset your password, go to the login page, click on 'Forgot password?', enter your email, and follow the instructions."
+  },
+  {
+    "question": "How can I contact support?",
+    "answer": "You can contact support by emailing support@mysite.com or using the live chat on our website."
+  },
+  {
+    "question": "How do I update my profile information?",
+    "answer": "To update your profile, log in, go to 'Account Settings', and edit your personal information."
+  },
+  {
+    "question": "Where can I find the user guide?",
+    "answer": "The user guide is available in the 'Help' section of our website. You can download it as a PDF or view it online."
+  },
+  {
+    "question": "How do I delete my account?",
+    "answer": "To delete your account, go to 'Account Settings', scroll down to 'Delete Account', and follow the confirmation steps."
+  },
+  {
+    "question": "How can I change my subscription plan?",
+    "answer": "Log in, go to 'Billing', and select 'Change Plan'. Choose your new plan and confirm the update."
+  },
+  {
+    "question": "Why am I not receiving emails from the site?",
+    "answer": "Check your spam folder, ensure your email address is correct in your profile, and make sure you have not unsubscribed from notifications."
+  }
+]

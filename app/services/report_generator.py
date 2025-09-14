@@ -147,7 +147,7 @@ def generate_report(audio_path: str) -> str:
     
 
     # print results
-    print("\n🔹 Structured Sections:\n")
+    print("\n Structured Sections:\n")
     for section, items in summary_dict.items():
         print(section + ":")
         if items:

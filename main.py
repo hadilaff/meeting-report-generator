@@ -14,7 +14,7 @@ from app.db.session import sessionmanager
 from contextlib import asynccontextmanager
 import bcrypt
 from app.api.report import router as report_router
-
+from app.api import support 
 
 # ref-issue: https://github.com/pyca/bcrypt/issues/684
 if not hasattr(bcrypt, "__about__"):
@@ -56,6 +56,6 @@ app.include_router(health_router, tags=["system"])
 app.include_router(auth_router, prefix="/auth", tags=["authentication"])
 
 app.include_router(report_router, prefix="/report", tags=["Report Generator"])
-
+app.include_router(support.router, prefix="/support", tags=["Support Agent"])
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
